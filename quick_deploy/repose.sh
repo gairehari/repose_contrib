@@ -33,7 +33,7 @@ install_repose()
 # wget may be unavailable on Mac or other OS platfoms. Script falls back to curl if wget is not available
    if wget $LATEST_URL -qO-; then
         echo "using wget"
-        LATEST_XML= 'wget $LATEST_URL -qO-'
+        LATEST_XML=`wget $LATEST_URL -qO-`
     else
         echo "using curl"    
         LATEST_XML=`curl $LATEST_URL`
