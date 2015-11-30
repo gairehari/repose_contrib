@@ -14,7 +14,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 start_repose()
 {
     echo "Starting repose..."
-    java -jar $REPOSE/repose-valve.jar -c $CONFIG_DIR -p 8887
+    java -jar $REPOSE/repose-valve.jar -c $CONFIG_DIR
 }
 
 install_repose()
